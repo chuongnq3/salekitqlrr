@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>M-Flex - Cho vay thế chấp linh hoạt</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+        <div class="container">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <div class="border-end border-primary pe-3">
+                            <a href="https://maps.app.goo.gl/qHMG1ba3Lo2fPbXLA" class="text-muted small"><i
+                                    class="fas fa-map-marker-alt text-primary me-2"></i>Địa chỉ</a>
+                        </div>
+                        <div class="ps-3">
+                            <a href="mailto:cskhdoanhnghiep@msb.com.vn" class="text-muted small"><i
+                                    class="fas fa-envelope text-primary me-2"></i>cskhdoanhnghiep@msb.com.vn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex justify-content-end">
+                        <div class="d-flex border-end border-primary pe-3">
+                            <a class="btn p-0 text-primary me-3" href="https://www.facebook.com/MSBVietnam"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn p-0 text-primary me-3"
+                                href="https://www.youtube.com/c/Ng%C3%A2nh%C3%A0ngH%C3%A0ngH%E1%BA%A3iMSB/videos"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a class="btn p-0 text-primary me-0" href="https://www.linkedin.com/company/msbcareer/"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="dropdown ms-3">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i
+                                        class="fas fa-globe-europe text-primary me-2"></i>Tiếng Việt</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item">Tiếng Việt</a>
+                                <a href="#" class="dropdown-item">English</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+
+    <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html" class="navbar-brand p-0">
+                    <img src="img/MSB_logo_1.png" alt="Logo" class="logo-large">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-0 mx-lg-auto">
+                        <a href="#section_1" class="nav-item nav-link active">Trang chủ</a>
+                        <a href="#section_2" class="nav-item nav-link">Giới thiệu</a>
+                        <a href="#section_3" class="nav-item nav-link">Điều kiện</a>
+                        <a href="#section_4" class="nav-item nav-link">Quy trình</a>
+                        <a href="#section_5" class="nav-item nav-link">Thông tin</a>
+                        <a href="#section_6" class="nav-item nav-link">Đánh giá</a>
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+                    <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
+                        data-wow-delay=".9s">
+                        <i class="fa fa-phone-alt fa-2x"></i>
+                        <div class="position-absolute" style="top: 7px; right: 12px;">
+                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                        </div>
+                    </a>
+                    <div class="d-flex flex-column justify-content-center ms-3">
+                        <span>Hotline</span>
+                        <a href="tel:+18006260"><span class="text-dark">18006260</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Carousel Start -->
+    <section class="about-section section-padding" id="section_1">
+        <div class="header-carousel owl-carousel">
+            <div class="header-carousel-item custom-bg">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
+                            <div class="col-lg-7 animated fadeInRight mx-auto">
+                                <div class="text-center">
+                                    <div class="d-flex flex-column gap-3 mb-4 button-group">
+                                        <a class="btn btn-light1 rounded-pill py-3 px-4 px-md-5" href="#">
+                                            <i class="fas fa-play-circle me-2"></i>Video giới thiệu
+                                        </a>
+                                        <a class="btn btn-light1 rounded-pill py-3 px-4 px-md-5" href="#">
+                                            Tìm hiểu thêm
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Carousel End -->
+    <!-- Carousel End -->
+
+    <!-- Feature Start -->
+    <section class="about-section section-padding" id="section_2">
+        <div class="container-fluid feature bg-light py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Gói giải pháp</h4>
+                    <h1 class="display-4 mb-4">M•FLEX</h1>
+                    <p class="mb-0">Ra đời với sứ mệnh giúp doanh nghiệp Việt tiếp cận nguồn vốn nhanh chóng,
+                        linh hoạt và thuận tiện
+                    </p>
+                    <p class="mb-0">Xóa bỏ rào cản tín dụng truyền thống,
+                        tiếp sức kịp thời cho sự phát triển bền vững
+                    </p>
+
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fa fa-gift fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="mb-4">Ưu đãi</h4>
+                            <p class="mb-4">Hạn mức khủng lên đến 15 tỷ đồng, lãi suất chỉ 4.5%/năm tiếp sức tài chính
+                                đúng
+                                thời điểm
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fa fa-cogs fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4">Quy trình</h4>
+                            <p class="mb-4">Tối ưu hóa hành trình đăng ký vay, xét duyệt 100% online, nhận phê duyệt
+                                trong 4
+                                giờ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fa fa-th-large fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4">Đa dạng</h4>
+                            <p class="mb-4">Đáp ứng tối đa mọi nhu cầu vốn của Doanh nghiệp: Vay vốn, bảo lãnh, LC...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fa fa-money-bill-wave fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4">Chi phí</h4>
+                            <p class="mb-4">Phê duyệt khi chưa cần có kết quả định giá, tối ưu hóa chi phí vay cho doanh
+                                nghiệp
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature End -->
+
+    <!-- Feature Start -->
+    <section class="about-section section-padding" id="section_3">
+        <div class="container-fluid bg-light about pb-5">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="about-item-content bg-white rounded p-5 h-100">
+                            <h4 class="text-primary">Điều kiện vay</h4>
+                            <h1 class="display-4 mb-4">Doanh nghiệp cần</h1>
+                            <p>Mục tiêu hỗ trợ tối đa và đồng hành cùng khách hàng trên chặng đường phát triển kinh
+                                doanh,
+                                doanh nghiệp của bạn cần đáp ứng tối thiểu các điều kiện sau:
+                            </p>
+                            <div class="conditions-grid">
+                                <div class="condition-item">
+                                    <i class="fa fa-check"></i>
+                                    Số năm hoạt động: Từ 1 năm trở lên
+                                </div>
+                                <div class="condition-item">
+                                    <i class="fa fa-check"></i>
+                                    Doanh thu: Từ 10 tỷ đến 1000 tỷ đồng
+                                </div>
+                                <div class="condition-item">
+                                    <i class="fa fa-check"></i>
+                                    Xếp hạng tín dụng: M-SME: A/B/C<br>
+                                    <span class="indent">SME/SMC/LMC: A/B/C/D/E</span>
+                                </div>
+                                <div class="condition-item">
+                                    <i class="fa fa-check"></i>
+                                    Lợi nhuận gộp - Chi phí lãi vay: Lớn hơn 0
+                                </div>
+                                <div class="condition-item">
+                                    <i class="fa fa-check"></i>
+                                    Vốn chủ sở hữu: Lớn hơn 0
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="bg-white rounded p-5 h-100">
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-12">
+                                    <div class="rounded bg-light">
+                                        <img src="img/about-1.png" class="img-fluid rounded w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="h1 fw-bold text-primary" data-toggle="counter-up">15</span>
+                                            <span class="text-primary fs-2 fw-bold">tỷ</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">Hạn mức</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="h1 fw-bold text-primary" data-toggle="counter-up">4.5</span>
+                                            <span class="text-primary fs-2 fw-bold">%</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">Lãi suất</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="h1 fw-bold text-primary" data-toggle="counter-up">4</span>
+                                            <span class="text-primary fs-2 fw-bold">giờ</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">Phê duyệt</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="h1 fw-bold text-primary" data-toggle="counter-up">2</span>
+                                            <span class="text-primary fs-2 fw-bold">giờ</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">Giải ngân</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <section class="about-section section-padding" id="section_4">
+        <div class="container-fluid service py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Quy trình</h4>
+                    <h1 class="display-4 mb-4">Giải ngân</h1>
+                    <p class="mb-0">Quy trình đăng ký vay và giải ngân được thực hiện hoàn toàn trực tuyến,
+                        tiết kiệm thời gian và tối ưu hóa thủ tục cho doanh nghiệp
+                    </p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/blog-1.png" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-user-edit fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <a href="#" class="d-inline-block h4 mb-4">Đăng ký vay</a>
+                                    <p class="mb-4">Đăng ký vay chỉ trong 1 phút với số điện thoại cá nhân</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/blog-2.png" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-file-signature fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <a href="#" class="d-inline-block h4 mb-4">Hoàn thiện hồ sơ</a>
+                                    <p class="mb-4">Hồ sơ nộp online, công nghệ OCR tự động điền thông tin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/blog-3.png" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-envelope-open-text fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <a href="#" class="d-inline-block h4 mb-4">Nhận phê duyệt</a>
+                                    <p class="mb-4">Tiếp nhận thông báo phê duyệt chỉ sau 4 giờ làm việc</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/blog-4.png" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-hand-holding-usd fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <a href="#" class="d-inline-block h4 mb-4">Ký kết & Giải ngân</a>
+                                    <p class="mb-4">Ký kết Hợp đồng, giải ngân online nhanh chóng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="#">Xem hướng dẫn chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service End -->
+
+    <!-- FAQs Start -->
+    <section class="about-section section-padding" id="section_5">
+        <div class="container-fluid faq-section bg-light py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="h-100">
+                            <div class="mb-5">
+                                <h4 class="text-primary">Thông tin</h4>
+                                <h1 class="display-4 mb-0">Cần biết</h1>
+                            </div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button border-0" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Q: Để đăng ký vay hồ sơ cần chuẩn bị gì?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show active"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body rounded">
+                                            <strong>A:</strong> Quý khách cần cung cấp<br>
+                                            <strong>Hồ sơ đăng ký vay gồm có:</strong>
+                                            <ul>
+                                                <li>Thông tin người đại diện vay</li>
+                                                <li>Thông tin doanh nghiệp cho phần đăng ký</li>
+                                            </ul>
+                                            <strong>Hồ sơ vay gồm có:</strong>
+                                            <ul>
+                                                <li>Hồ sơ pháp lý</li>
+                                                <li>Hồ sơ tài chính</li>
+                                                <li>Hồ sơ tài sản bảo đảm</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Q: Điều kiện cần thiết để vay vốn là gì?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>A:</strong> Để được xem xét cấp mới hoặc tái cấp hạn mức tín dụng
+                                            khung
+                                            tại MSB, doanh nghiệp cần đáp ứng các điều kiện sau:
+                                            <ul>
+                                                <li><strong>Thời gian hoạt động:</strong> Doanh nghiệp đã hoạt động tối
+                                                    thiểu 01 năm.</li>
+                                                <li><strong>Doanh thu:</strong>
+                                                    <ul>
+                                                        <li>Có doanh thu từ 10 tỷ đồng đến dưới 1.000 tỷ đồng,</li>
+                                                        <li>Dựa theo tờ khai thuế VAT trong 12 tháng gần nhất hoặc 04
+                                                            quý
+                                                            gần nhất.</li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>Xếp hạng tín dụng nội bộ:</strong>
+                                                    <ul>
+                                                        <li>Nhóm M-SME: xếp hạng A, B, C;</li>
+                                                        <li>Nhóm SME/SMC/LMC: xếp hạng A, B, C, D, E.</li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>Tình hình tài chính:</strong>
+                                                    <ul>
+                                                        <li>Lợi nhuận gộp trừ chi phí lãi vay > 0;</li>
+                                                        <li>Vốn chủ sở hữu > 0, theo báo cáo tài chính năm gần nhất.
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>Tình trạng hoạt động:</strong> Doanh nghiệp còn hoạt động và
+                                                    có
+                                                    tổng doanh thu theo khai thuế VAT trong 06 tháng gần nhất > 0.</li>
+                                                <li><strong>Ngành nghề kinh doanh:</strong> Không thuộc danh mục ngành
+                                                    nghề
+                                                    bị hạn chế cấp tín dụng theo quy định hiện hành của MSB.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Q: Gói giải pháp M-Flex gồm những sản phẩm gì?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>A:</strong> Gói M-Flex hỗ trợ các sản phẩm tín dụng có thế chấp linh
+                                            hoạt, bao gồm:
+                                            <ul>
+                                                <li>Vay ngắn hạn</li>
+                                                <li>Thấu chi</li>
+                                                <li>Thẻ tín dụng doanh nghiệp</li>
+                                                <li>Bao thanh toán</li>
+                                                <li>Chiết khấu bộ chứng từ</li>
+                                                <li>Bảo lãnh</li>
+                                                <li>L/C (bao gồm cả LC upas nội địa)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                        <img src="img/carousel-2.png" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQs End -->
+    <!-- Testimonial Start -->
+
+    <section class="about-section section-padding" id="section_6">
+        <div class="container-fluid testimonial pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Khách hàng</h4>
+                    <h1 class="display-4 mb-4">Đánh giá</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/testimonial-1.jpg" class="img-fluid h-100 rounded"
+                                        style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Nguyễn Khánh Huyền</h4>
+                                    <p class="mb-3">Công ty TNHH NovaKia</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-0">Quá bất ngờ khi nhận được thông báo phê duyệt hạn mực của MSB chỉ
+                                        trong
+                                        1 giờ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/testimonial-2.jpg" class="img-fluid h-100 rounded"
+                                        style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Trần Minh Đăng</h4>
+                                    <p class="mb-3">Công ty cổ phần chuyển phát Hà Nội</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-0">Hồ sơ đơn giản, dễ cung cấp, nhanh gọn, minh bạch
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/testimonial-3.jpg" class="img-fluid h-100 rounded"
+                                        style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Vũ Minh Hương</h4>
+                                    <p class="mb-3">Công ty TNHH cung ứng nhân lực chất lượng cao</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                    <p class="mb-0">Ký số nhanh chóng: giao diện dễ sử dụng, dễ dàng theo dõi tiến độ
+                                        gói
+                                        vay
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <div class="border-end border-primary pe-3">
+                            <a href="https://maps.app.goo.gl/qHMG1ba3Lo2fPbXLA" class="text-muted small"><i
+                                    class="fas fa-map-marker-alt text-primary me-2"></i>Địa chỉ</a>
+                        </div>
+                        <div class="ps-3">
+                            <a href="mailto:cskhdoanhnghiep@msb.com.vn" class="text-muted small"><i
+                                    class="fas fa-envelope text-primary me-2"></i>cskhdoanhnghiep@msb.com.vn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex justify-content-end">
+                        <div class="d-flex border-primary pe-3">
+                            <a class="btn p-0 text-primary me-3" href="https://www.facebook.com/MSBVietnam"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn p-0 text-primary me-3"
+                                href="https://www.youtube.com/c/Ng%C3%A2nh%C3%A0ngH%C3%A0ngH%E1%BA%A3iMSB/videos"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a class="btn p-0 text-primary me-0" href="https://www.linkedin.com/company/msbcareer/"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start text-body">
+                    Designed and Developed by <a class="border-bottom text-white" href="https://htmlcodex.com">Chuongnq3
+                        - RDM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', function () {
+                document.querySelectorAll('.navbar-nav .nav-link').forEach(item => {
+                    item.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
